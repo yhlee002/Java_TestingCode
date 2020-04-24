@@ -1,4 +1,4 @@
-# JavaStudy
+# Java_TestingCode
 
 <h3>Practice Files : Java_testing_code</h3>
   <h4>191203 : |n(new line), .length() method</h4>
