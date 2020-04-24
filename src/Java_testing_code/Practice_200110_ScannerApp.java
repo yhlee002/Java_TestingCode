@@ -1,0 +1,58 @@
+package Java_testing_code;
+import java.util.Scanner;
+
+public class Practice_200110_ScannerApp {
+	public static void main(String[] args) {
+		
+		//정수값 하나를 입력 받을때
+		Scanner scan = new Scanner(System.in);
+		System.out.println("정수값 :");
+		int x = scan.nextInt();
+		System.out.println("정수값 "+x+"를 입력했습니다.");
+		scan.close();
+		
+		//문자열 하나를 입력받을때
+		Scanner scan2 = new Scanner(System.in);
+		System.out.println("문자열 : ");
+		String a = scan2.nextLine(); //nextLine() : String Type과 match. char와는 mismatch.
+		System.out.println("문자열 "+a+"를 입력했습니다.");
+		scan2.close();
+		/*
+		 * ※ next() :  개행문자를 무시하고 입력을 받음, 즉 숫자를 치고 엔터를 누를경우 엔터 전까지만 입력을 받음.
+		 * ※ nextLine() :  한줄 단위로 입력 받기 때문에, 개행문자도 한 줄로 인식합니다.
+		 */
+		
+		
+		
+		
+		/*정수값 두개를 입력 받을때 
+		정수값은 두개를 같이 나열해도 순서대로 가능(띄어쓰기로 구분할 수도 있고 하나 칠때마다 enter를 입력해도 구분됨*/
+		Scanner scan3 = new Scanner(System.in);
+		System.out.println("y값과, z값 :");
+		int y, z;
+		y = scan3.nextInt();
+		z = scan3.nextInt();
+		System.out.println("y값과 z값을 각각 "+y+","+z+"으로 입력했습니다."); 
+		scan3.close();
+		
+		//문자열 두개를 입력 받을때
+		Scanner scan4 = new Scanner(System.in);
+		String b, c;
+		System.out.println("두개의 문자열 : ");
+		b = scan4.nextLine();
+		c = scan4.nextLine();
+		System.out.println("b와 c의 문자열을 각각 "+b+","+c+"으로 입력했습니다."); //이렇게 하나씩 입력하면 가능
+		scan4.close();
+		
+		/*문자열의 n번째  단어를 출력하는 방식
+		 글자수를 세는데 있어서 띄어쓰기도 글자수로 여김*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+		Scanner scan5 = new Scanner(System.in);
+		char d, e;
+		System.out.println("두개의 문자열 : ");
+		String str = scan5.nextLine();
+		d = str.charAt(0);
+		e = str.charAt(7);
+		System.out.println("d와 e를 문자열에서 각각\""+d+"\", \"+"+e+"\"으로 입력했습니다.");
+		scan5.close();
+	}
+}
