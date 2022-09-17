@@ -112,39 +112,28 @@ Lambda expression : 메서드를 하나의 식(expression)으로 표현한 것
 <div markdown="1">
 <ol>
   <li>반환타입과 메서드명 생략
-    <pre>
-      <code>
-        int max(int a, int b) {
-          return a > b ? a : b;
-        }
+    <pre><code>int max(int a, int b) {
+  return a > b ? a : b;
+}
 
-        (int a, int b) -> { return a > b ? a : b; } // 람다식으로 변환한 경우
-      <code>
-    </pre>
-  </li>
-  <li>반환값이 있는 경우 return 생략 가능(식으로 나타낼 수 있으며, ';' 생략)
-    <pre>
-      <code>(int a, int b) -> a > b ? a : b</code>
-    </pre>
+// 람다식으로 변환한 경우
+(int a, int b) -> { return a > b ? a : b; }</code></pre></li>
+
+<li>반환값이 있는 경우 return 생략 가능(식으로 나타낼 수 있으며, ';' 생략)
+    <pre><code>(int a, int b) -> a > b ? a : b</code></pre>
   </li>
   <li>대부분의 경우에는 매개변수 타입 생략 가능(유추 가능한 경우)
     <p>Cf. 매개변수가 여러 개일 경우 모두 생략/모두 명시만 가능하다.</p>
     <p>Cf. 매개변수가 하나라면 괄호 생략 가능(Cf. 타입이 명시되는 경우 괄호 생략 불가)</p>
-      <code>
-        (a, b) -> a > b ? a : b
-      </code>
+<code>(a, b) -> a > b ? a : b</code>
   </li>
   <li>괄호 안의 문장이 하나라면 괄호 `{}` 생략 가능
     <p>Cf. 괄호 안에 return문이 들어갈 경우 생략 불가</p>
-    <pre>
-      <code>
-          (String name, int i) -> {
-            System.out.println(name + "=" + i);
-          }
-          // 람다식으로 변환한 경우
-          (String name, int i) -> System.out.println(name + "=" + i);
-      </code>
-    </pre>
+    <pre><code>(String name, int i) -> {
+  System.out.println(name + "=" + i);
+}
+// 람다식으로 변환한 경우
+(String name, int i) -> System.out.println(name + "=" + i);</code></pre>
   </li>
 </ol>
 </div>
