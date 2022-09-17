@@ -1,6 +1,6 @@
 package Java_testing_code;
 import java.util.Scanner;
-public class Practice_200213_3 {
+public class P_200213_3 {
 //알쏭달쏭 자바 예제(if-then문, if-else if문, while문, do-while문문)
 	public static void main(String[] args) {
 		//2개의 변수 a,b의 값을 읽어서 대소 관계를 나타내는 프로그램 작성

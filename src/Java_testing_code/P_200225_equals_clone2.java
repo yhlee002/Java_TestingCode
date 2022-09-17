@@ -19,7 +19,7 @@ class Cclass implements Cloneable {
 }
 
 
-public class Practice_200225_equals_clone2 {
+public class P_200225_equals_clone2 {
 
 	public static void main(String[] args) throws CloneNotSupportedException{
 		Cclass cl1 = new Cclass();

@@ -1,6 +1,6 @@
 package Java_testing_code;
 
-public class Practice_191205 {
+public class P_191205 {
 
 	public static void main(String[] args) {
 		//String : use "", Number : don't use ""

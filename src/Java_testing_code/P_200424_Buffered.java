@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 
-public class Practice_200424_Buffered {
+public class P_200424_Buffered {
 	public static void main(String[] args)  throws IOException{
 		//BufferedReader, BufferedWriter
 		/*

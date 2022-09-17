@@ -1,6 +1,6 @@
 package Java_testing_code;
 import javax.swing.JOptionPane;
-public class Practice_191209 {
+public class P_191209 {
 
 	public static void main(String[] args) { //args은 String으로 지정되어 있음
 		

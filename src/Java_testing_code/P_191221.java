@@ -1,6 +1,6 @@
 package Java_testing_code;
 
-public class Practice_191221 {
+public class P_191221 {
 	static int a;
 	static int b;
 

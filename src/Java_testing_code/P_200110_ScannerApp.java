@@ -1,7 +1,7 @@
 package Java_testing_code;
 import java.util.Scanner;
 
-public class Practice_200110_ScannerApp {
+public class P_200110_ScannerApp {
 	public static void main(String[] args) {
 		
 		//정수값 하나를 입력 받을때

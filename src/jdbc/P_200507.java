@@ -1,4 +1,4 @@
-package Java_testing_code;
+package jdbc;
 
 import java.sql.*;
 import java.time.LocalDate;
@@ -124,7 +124,7 @@ class ChampionDTO{
 }
 
 
-public class Practice_200507 {
+public class P_200507 {
 	public static void main(String[] args) {
 		//id를 입력받아 해당 레코드의 정보를 출력(DTO 객체에 담아서 따로 다시 출력해야함)해주고(toString overriding),
 		//수정할 column의 인덱스(보여주기)를 구분자와 함께 입력.

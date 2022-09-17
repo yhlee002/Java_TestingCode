@@ -38,7 +38,7 @@ class AccountingPractice { //기존에 있던 class 파일이 아니라서 publi
 	}
 }
 
-public class Practice_191218_Instance {	
+public class P_191218_Instance {
 		public static void main(String[] args) {
 
 		AccountingPractice A1 = new AccountingPractice(); //class를 복제하여 instance 만드는 코드

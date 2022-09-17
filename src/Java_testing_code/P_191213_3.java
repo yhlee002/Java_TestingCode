@@ -1,6 +1,6 @@
 package Java_testing_code;
 
-public class Practice_191213_3{ //args[] 이용해서 입력값에 따라 달라지게 하기(find/replace...이용해서도 비슷한 기능 가능)
+public class P_191213_3 { //args[] 이용해서 입력값에 따라 달라지게 하기(find/replace...이용해서도 비슷한 기능 가능)
 
 	public static void main(String[] args) {
 		

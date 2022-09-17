@@ -12,7 +12,7 @@ class Foo{
 		System.out.println(instanceVar);
 	}
 }
-public class Practice_191218_StaticApp_2 { 
+public class P_191218_StaticApp_2 {
 
 	public static void main(String[] args) {
 		System.out.println(Foo.classVar); //class 소속인 변수는 불러올 수 있음 → I class var 인출

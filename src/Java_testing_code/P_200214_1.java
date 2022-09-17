@@ -36,7 +36,7 @@ class subcalculator extends calculator{
 		System.out.println("2(x + y) = "+2*(x+y)); //상속받은 클래스의 메소드를 부분적으로 수정(overriding)
 	}
 }
-public class Practice_200214_1 {
+public class P_200214_1 {
 
 	public static void main(String[] args) {
 		calculator c = new calculator(10,20);

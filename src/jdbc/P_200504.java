@@ -1,7 +1,6 @@
-package Java_testing_code;
+package jdbc;
 
 
-import java.time.LocalDate;
 import java.util.Scanner;
 import java.sql.*;
 
@@ -15,7 +14,7 @@ class MyConnect{
 		return DriverManager.getConnection(url, userId, userPw);
 	}
 }
-public class Practice_200504 {
+public class P_200504 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Connection conn = null;

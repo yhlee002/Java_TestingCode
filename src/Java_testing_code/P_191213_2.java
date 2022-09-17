@@ -1,6 +1,6 @@
 package Java_testing_code;
 
-public class Practice_191213_2{ //변수 정리
+public class P_191213_2 { //변수 정리
 
 	public static void main(String[] args) {
 		

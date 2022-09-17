@@ -1,6 +1,6 @@
 package Java_testing_code;
 import java.util.Random;
-public class Practice_200213_2 {
+public class P_200213_2 {
 //알쏭달쏭 자바 예제(난수)
 	public static void main(String[] args) {
 

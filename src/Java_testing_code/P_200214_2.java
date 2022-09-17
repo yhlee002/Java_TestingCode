@@ -26,7 +26,7 @@ class calculator2{
 	}
 	
 }
-public class Practice_200214_2 {
+public class P_200214_2 {
 
 	public static void main(String[] args) {
 	calculator2 cal = new calculator2();

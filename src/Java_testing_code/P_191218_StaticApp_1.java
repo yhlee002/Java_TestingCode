@@ -10,7 +10,7 @@ class referenceApp{ //public class : 자체의 파일이 존재해야 하나봄.
 		System.out.println("Method2 : "+variable2);
 	}
 }
-public class Practice_191218_StaticApp_1 { 
+public class P_191218_StaticApp_1 {
 
 	public static void main(String[] args) { //main method는 static을 수반
 		//static type의 main method라서 instance type의 field나 method를 받지 X

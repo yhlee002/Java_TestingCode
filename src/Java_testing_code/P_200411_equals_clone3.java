@@ -48,7 +48,7 @@ class OriginalD implements Cloneable{
 
 
 
-public class Practice_200411_equals_clone3 {
+public class P_200411_equals_clone3 {
 	public static void main(String[] args) throws CloneNotSupportedException {
 		OriginalC oc = new OriginalC();
 

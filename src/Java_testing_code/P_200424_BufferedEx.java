@@ -8,7 +8,7 @@ import java.util.Date;
 import java.io.BufferedReader;
 
 
-public class Practice_200424_BufferedEx {
+public class P_200424_BufferedEx {
 	public static void main(String[] args) throws IOException{
 		FileReader fr = new FileReader("ReadFile.txt");
 		BufferedReader br = new BufferedReader(fr);

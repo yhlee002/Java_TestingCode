@@ -1,6 +1,6 @@
 package Java_testing_code;
 
-public class Practice_191213_4{ //조건문
+public class P_191213_4 { //조건문
 
 	public static void main(String[] args) {
 		

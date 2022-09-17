@@ -1,6 +1,6 @@
 package Java_testing_code;
 
-public class Practice_191218 {
+public class P_191218 {
 
 	public static double valueofSupply; //전역변수
 	public static double vatRates;

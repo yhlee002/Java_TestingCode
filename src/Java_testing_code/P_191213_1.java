@@ -1,6 +1,6 @@
 package Java_testing_code;
 
-public class Practice_191213_1{
+public class P_191213_1 {
 
 	public static void main(String[] args) {
 		

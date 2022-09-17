@@ -1,6 +1,6 @@
 package Java_testing_code;
 import java.util.Scanner; //System.in은 키보드와 연결된 표준 입력 스트림(STDIN;standard input stream)
-public class Practice_200213_1 {
+public class P_200213_1 {
 //알쏭달쏭 자바 예제(출력스트림)
 	public static void main(String[] args) {
 		//Scanner클래스의 next ...메소드 중 주로 쓰이는 것은 nextInt(), nextDouble(), next(), nextLine(), nextBoolean()

@@ -1,8 +1,6 @@
 package Java_testing_code;
 //using equals(), clone() by overriding
 
-import java.security.acl.Acl;
-
 //Overriding equals()
 class Aclass {
 	
@@ -32,7 +30,7 @@ class Bclass implements Cloneable{
 }
 
 
-public class Practice_200225_equals_clone {
+public class P_200225_equals_clone {
 
 	public static void main(String[] args) throws CloneNotSupportedException{
 //		Aclass클래스를 통해 A1, A2라는 인스턴스 생성
