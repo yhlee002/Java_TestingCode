@@ -30,7 +30,7 @@ public class Practice_200214_2 {
 
 	public static void main(String[] args) {
 	calculator2 cal = new calculator2();
-	cal.setOprands(new int[] {10,20}); //int 앞의 new의 역할은?
+	cal.setOprands(new int[] {10,20}); //int 앞의 new의 역할은? -> 생성자
 	cal.sum();
 	cal.avg();
 	

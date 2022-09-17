@@ -3,17 +3,17 @@ package Java_testing_code;
 
 class Cclass implements Cloneable {
 	
-	String Cstring;
+	String cString;
     public boolean equals(Object obj) {
     	Cclass Aobj = (Cclass) obj;
-        return (this.Cstring == Aobj.Cstring);
+        return (this.cString == Aobj.cString);
     }
     
     public Object clone() throws CloneNotSupportedException {
 		return super.clone();
     }
     
-    public String showingmeth() {
+    public String showMessage() {
     	return "==";
     }
 }
@@ -24,8 +24,8 @@ public class Practice_200225_equals_clone2 {
 	public static void main(String[] args) throws CloneNotSupportedException{
 		Cclass cl1 = new Cclass();
 		Cclass cl2 = (Cclass)cl1.clone();
-		System.out.println(cl1.showingmeth());
-		System.out.println(cl2.showingmeth());
+		System.out.println(cl1.showMessage());
+		System.out.println(cl2.showMessage());
 		System.out.println(cl1.equals(cl2));
 	}
 

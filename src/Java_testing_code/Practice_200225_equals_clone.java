@@ -1,13 +1,19 @@
 package Java_testing_code;
 //using equals(), clone() by overriding
 
+import java.security.acl.Acl;
+
 //Overriding equals()
 class Aclass {
 	
-	String Astring;
+	String aString;
+
+	public Aclass(String aString) {
+		this.aString = aString;
+	}
     public boolean equals(Object obj) {
     	Aclass Aobj = (Aclass) obj;
-        return (this.Astring == Aobj.Astring);
+        return (this.aString == Aobj.aString);
     }
 }
 
@@ -30,8 +36,8 @@ public class Practice_200225_equals_clone {
 
 	public static void main(String[] args) throws CloneNotSupportedException{
 //		Aclass클래스를 통해 A1, A2라는 인스턴스 생성
-		Aclass A1 = new Aclass(); 
-		Aclass A2 = new Aclass(); 
+		Aclass A1 = new Aclass("a");
+		Aclass A2 = new Aclass("a");
 		System.out.println(A1.equals(A2));
 		
 		Bclass B1 = new Bclass();

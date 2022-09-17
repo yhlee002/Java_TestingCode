@@ -43,13 +43,7 @@ class ChampionDAO{
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-		
 	}
-	
-	
-	
-	
-	
 }
 
 
