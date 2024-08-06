@@ -11,7 +11,6 @@ import java.util.Random;
  * add 노드 추가
  * delete 루트 노드 삭제
  * peak 루트 노드 조회
- * compareTo 노드간의 값 비교
  * swap 노드 위치 교환
  */
 public class HeapExample1 {
@@ -25,15 +24,19 @@ public class HeapExample1 {
             h.add(n);
         }
 
-        System.out.println("최초 heap: " + h.toString());
+        System.out.println("최초 heap: " + h);
         System.out.println("peek: " + h.peek());
 
         h.add(12);
-        System.out.println("12 삽입 후 heap: " + h.toString());
+        System.out.println("12 삽입 후 heap: " + h);
         h.add(5);
-        System.out.println("5 삽입 후 heap: " + h.toString());
+        System.out.println("5 삽입 후 heap: " + h);
 
+        h.delete();
+        System.out.println("힙 데이터 삭제 후 heap: " + h);
 
+        h.delete();
+        System.out.println("힙 데이터 삭제 후 heap: " + h);
     }
 
     protected static class Heap {
@@ -69,7 +72,7 @@ public class HeapExample1 {
             int nodeIdx = this.size + 1;
             int parentIdx = (nodeIdx) / 2;
 
-            while (this.heap[parentIdx] > node) {
+            while (this.heap[parentIdx] > node && nodeIdx > 1) {
                 swap(parentIdx, nodeIdx);
 
                 // 바뀐 인덱스
@@ -87,18 +90,29 @@ public class HeapExample1 {
 
             // root 제거 -> root 자리에 last node 옮김
             this.heap[1] = this.heap[this.size];
+            this.size--;
 
             int nodeIdx = 1;
-            int childIdx0 = nodeIdx * 2;
-            int childIdx1 = nodeIdx * 2 + 1;
 
-            while (this.heap[nodeIdx] > this.heap[childIdx0] || this.heap[nodeIdx] > this.heap[childIdx1]) {
-                int targetIdx = this.heap[childIdx0] <= this.heap[childIdx1] ? childIdx0 : childIdx1;
-                swap(nodeIdx, targetIdx);
-                nodeIdx = targetIdx;
+            int targetIdx;
+            while ((nodeIdx * 2 <= this.size && this.heap[nodeIdx * 2] < this.heap[nodeIdx])
+                    || (nodeIdx * 2 + 1) <= this.size && this.heap[nodeIdx * 2 + 1] < this.heap[nodeIdx]) {
+                int childIdx0 = nodeIdx * 2;
+                int childIdx1 = nodeIdx * 2 + 1;
+                // 비교값 유효성 검증
+                if (childIdx0 <= this.size && childIdx1 > this.size) {
+                    targetIdx = childIdx0;
+                } else if (childIdx1 <= this.size && childIdx0 > this.size) {
+                    targetIdx = childIdx1;
+                } else {
+                    targetIdx = this.heap[childIdx0] <= this.heap[childIdx1] ? childIdx0 : childIdx1;
+                }
 
-                childIdx0 = nodeIdx * 2;
-                childIdx1 = nodeIdx * 2 + 1;
+                if (this.heap[nodeIdx] > this.heap[targetIdx]) {
+                    swap(nodeIdx, targetIdx);
+
+                    nodeIdx = targetIdx;
+                }
             }
         }
 
@@ -128,11 +142,11 @@ public class HeapExample1 {
                 builder.append(val + ", ");
             }
 
-            if (builder.toString().length() > 0) {
+            if (!builder.toString().isEmpty()) {
                 builder.delete(builder.length() - 2, builder.length());
             }
 
-            return "[" + builder.toString() + "]";
+            return "[" + builder + "]";
         }
     }
 }
