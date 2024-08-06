@@ -66,6 +66,7 @@ public class HeapExample1 {
                 resize(this.size * 2); // 용량 초과시 2배로 증가
             }
             this.heap[this.size + 1] = node;
+            this.size++;
 
             // 들어가야 하는 위치 찾기
             // (this.size + 1) / 2 = 들어갈 부모의 인덱스
@@ -79,8 +80,6 @@ public class HeapExample1 {
                 nodeIdx = parentIdx;
                 parentIdx = nodeIdx / 2;
             }
-
-            this.size++;
         }
 
         private void delete() {
